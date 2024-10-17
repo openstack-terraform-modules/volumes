@@ -12,5 +12,5 @@ locals {
     )
     volume_size = var.volume_size
     volume_count = var.volume_count
-
+    domain_name = var.domain_name
 }
