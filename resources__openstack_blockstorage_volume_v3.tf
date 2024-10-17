@@ -1,4 +1,4 @@
-resource openstack_blockstorage_volume_v3 data {
+resource openstack_blockstorage_volume_v3 volume {
   count = local.volume_count
 
   name = format(local.volume_name, count.index+1)

@@ -10,5 +10,7 @@ locals {
         var.volume_name,
         local.deployment.id,
     )
+    volume_size = var.volume_size
     volume_count = var.volume_count
+
 }
