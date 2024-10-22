@@ -11,5 +11,7 @@ resource openstack_blockstorage_volume_v3 volume {
     "VOLUME_NAME": format(local.volume_name, count.index+1)
     "VOLUME_DOMAIN": local.domain_name,
     "VOLUME_FQDN": join(".",[format(local.volume_name, count.index+1), local.domain_name])
+    "CLUSTER_PREFIX": local.cluster_prefix
+    "GROUP_PREFIX": local.group_prefix
   }
 }
