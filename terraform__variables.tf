@@ -23,7 +23,3 @@ variable volume_size {
 variable volume_count {
     type = number
 }
-
-variable domain_name {
-    type = string
-}
